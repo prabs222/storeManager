@@ -1,0 +1,77 @@
+#product-form {
+    margin-top: 20px;
+    text-align: center;
+    /* background: url('beautyshop.jpg') center/cover no-repeat; Replace 'your-background-image.jpg' with your actual image path */
+  padding: 20px; /*Add padding to make text more readable on the background*/
+  border-radius: 10px;
+  }
+  body {
+    font-family: 'RocknRoll One', sans-serif;
+    margin: 0;
+    overflow: hidden;  
+    /* background-color: #cc77aa; */
+    /* background:  url('beautyshop.jpg') center/cover no-repeat; Replace 'your-background-image.jpg' with your actual image path */
+    /* opacity: 0.4; */
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('beautyshop.jpg') center/cover no-repeat;
+    /* background-color: #fefefe; */
+    opacity: 0.3; /* Adjust the opacity as needed */
+    z-index: -1;
+  }
+  
+  #product-list {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #product-list div {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

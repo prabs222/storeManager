@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Recording</title>
+  <link rel="stylesheet" href="stylesheet/styles.css">
+  <link rel="icon" href="img/sales.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet/sales-recording.css">
+</head>
+<body>
+  <div id="navbar-container"></div> <!-- Placeholder for the navbar -->
+  <div id="app">
+    <h1>SALES RECORDING</h1>
+    <div id="sales-form">
+      <label for="productSelect">Select Product:</label>
+      <select id="productSelect">
+        <!-- Options will be dynamically added using JavaScript -->
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" required>
+
+      <button onclick="recordSale()">Record Sale</button>
+    </div>
+
+    <div id="sales-history">
+      <!-- Sales history will be displayed here -->
+    </div>
+  </div>
+  <!-- Include product-management.js -->
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/product-management.js"></script>
+  <script src="scripts/sales-recording.js"></script>
+</body>
+</html>

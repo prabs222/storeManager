@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+  font-family: 'RocknRoll One', sans-serif;
+  margin: 0;
+  background-color: rgb(173, 205, 155);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+}
+
+#category-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 160px;
+}
+
+.category-box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.5s ease;
+  bottom: 80px;
+}
+
+.category-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.category-box:hover {
+  transform: scale(1.2);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+
+.category-box.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(10px); 
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.category-box:hover .overlay-text {
+  opacity: 1;
+}
+
+h1, h2 {
+  font-family: 'RocknRoll One', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3em;
+}

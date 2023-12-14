@@ -1,0 +1,36 @@
+#stock-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.stock-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.stock-table th, .stock-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.stock-table th {
+  background-color: #f2f2f2;
+}
+
+.stock-table td span {
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.in-stock {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.out-of-stock {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+  
